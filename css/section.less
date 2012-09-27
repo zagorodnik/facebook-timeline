@@ -1,16 +1,25 @@
+#mainContent        { margin-top: 38px; position: relative;}
+#mainContent:before  { content: " "; width: 3px; background: #C3CCE0; top: 0;  bottom: 0;
+                      position: absolute; left: 420px; display: block; z-index: -1;
+                    }
+
+
 #profileImage       { box-shadow: 0 0 3px black; float: left; left: 0; margin-left: 20px; margin-top: -110px; position: relative; }
+
 #moreInfo,
 #aboutUser,
+
 .timeLinePost       { background-color: white; }
-.rightPost          { background: none repeat scroll 0% 0% white; margin-right: 12px; border: 1px solid rgb(204, 204, 204);
-                      border-radius: 3px 3px 3px 3px; padding: 9px; }
 .aside              { float: right; margin-top: 40px;}
-#chronology         { list-style: none;}
+
+#chronology         { list-style: none; margin:0;}
 .createPage         { text-decoration: none; border-bottom: 1px solid #C8D1E2; color: #3B5998;}
+
 #aboutUser span     { color: gray; font-size: 11px; font-weight: normal;}
 #highlight          { background: url("https://s-static.ak.fbcdn.net/rsrc.php/v2/yv/x/ZWvAgFWgfHn.png") no-repeat scroll right 9px #E8ECF2;
                       border: 1px solid #C3CCE0; border-radius: 4px 4px 4px 4px; color: #C3CCE0; margin-top: 30px;
                       margin-bottom: 30px;}
+
 #highlight span     { color: #A1A1C1; padding: 8px; }
 .centerLine         { position: relative; }
 
@@ -19,8 +28,13 @@
 .leftPost:after     { content: " "; position: absolute; top:30px; left: 401px; height: 9px; width: 9px; background: white;
                       border-right: 1px solid #ccc; border-top: 1px solid #ccc; -moz-transform: rotate(45deg);
                       -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); }
-.rightPost          { background: none repeat scroll 0% 0% white; margin-right: 12px; border: 1px solid rgb(204, 204, 204);
+
+.leftPost:before     { background:none repeat scroll 0 0 #C3CCE0; border:3px solid #E7EBF2; border-radius:20px;
+                       content:" "; height:5px; left:415px; position:absolute; top:30px; width:5px;
+                     }
+
+.rightPost          { background: none repeat scroll 0% 0% white; border: 1px solid rgb(204, 204, 204);
                       border-radius: 3px 3px 3px 3px; padding: 9px; position: relative;}
-.rightPost:before   { -moz-transform: rotate(45deg); background: none repeat scroll 0 0 white; border-bottom: 1px solid #CCCCCC;
+.rightPost:after   { -moz-transform: rotate(45deg); background: none repeat scroll 0 0 white; border-bottom: 1px solid #CCCCCC;
                       border-left: 1px solid #CCCCCC; content: " "; height: 9px; left: -5px; position: absolute; top: 30px;
                       width: 9px; }
