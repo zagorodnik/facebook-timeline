@@ -1,24 +1,30 @@
 #mainContent        { margin-top: 38px; position: relative;}
-#mainContent:before  { content: " "; width: 3px; background: #C3CCE0; top: 0;  bottom: 0;
-                      position: absolute; left: 420px; display: block; z-index: -1;
-                    }
+#mainContent:before { content: " "; width: 3px; background: #C3CCE0; top: 0;  bottom: 0;
+                      position: absolute; left: 420px; display: block; z-index: -1;}
+#mainImage          { border-bottom: 1px solid #696969;}
 
 
-#profileImage       { box-shadow: 0 0 3px black; float: left; left: 0; margin-left: 20px; margin-top: -110px; position: relative; }
+#profileImage       { box-shadow: 0 0 3px black; float: left; left: 5px; margin-left: 20px; margin-top: -110px; position: relative; }
 
 #moreInfo,
 #aboutUser,
-
 .timeLinePost       { background-color: white; }
+#aboutUser          { border: 1px solid #ccc; border-radius: 0 0 3px 3px; margin-top: -1px;}
 .aside              { float: right; margin-top: 40px;}
 
-#chronology         { list-style: none; margin:0;}
-.createPage         { text-decoration: none; border-bottom: 1px solid #C8D1E2; color: #3B5998;}
+.chronology         { list-style: none; margin-top: 33px;}
+.chronology li      { margin-bottom: 1px; border-left: 5px solid #C8D1E2; padding-left: 7px; padding-top: 1px; padding-bottom: 1px; }
+.chronology a       { color: #A1A1C1 }
+
+.createPage         { border-bottom: 1px solid #C8D1E2; position: fixed; right: 491px; background: #E7EBF2; height: 22px;
+                      padding-top: 10px; }
+.createPage a       { color: #3B5998; }
+.createPage span    { font-weight: bolder; font-size: 12px;}
 
 #aboutUser span     { color: gray; font-size: 11px; font-weight: normal;}
 #highlight          { background: url("https://s-static.ak.fbcdn.net/rsrc.php/v2/yv/x/ZWvAgFWgfHn.png") no-repeat scroll right 9px #E8ECF2;
-                      border: 1px solid #C3CCE0; border-radius: 4px 4px 4px 4px; color: #C3CCE0; margin-top: 30px;
-                      margin-bottom: 30px;}
+                      border: 1px solid #C3CCE0; border-radius: 4px 4px 4px 4px; border-width: 1px 1px 2px; color: #C3CCE0; margin: 20px auto 30px;
+                      width: 75px; }
 
 #highlight span     { color: #A1A1C1; padding: 8px; }
 .centerLine         { position: relative; }
@@ -29,12 +35,24 @@
                       border-right: 1px solid #ccc; border-top: 1px solid #ccc; -moz-transform: rotate(45deg);
                       -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); }
 
-.leftPost:before     { background:none repeat scroll 0 0 #C3CCE0; border:3px solid #E7EBF2; border-radius:20px;
-                       content:" "; height:5px; left:415px; position:absolute; top:30px; width:5px;
+.leftPost:before     { background:none repeat scroll 0 0 #C3CCE0; border:2px solid #E7EBF2; border-radius:20px;
+                       content:" "; height:5px; left:416px; position:absolute; top:31px; width:5px;
                      }
 
 .rightPost          { background: none repeat scroll 0% 0% white; border: 1px solid rgb(204, 204, 204);
                       border-radius: 3px 3px 3px 3px; padding: 9px; position: relative;}
-.rightPost:after   { -moz-transform: rotate(45deg); background: none repeat scroll 0 0 white; border-bottom: 1px solid #CCCCCC;
+.rightPost:after    { -moz-transform: rotate(45deg); background: none repeat scroll 0 0 white; border-bottom: 1px solid #CCCCCC;
                       border-left: 1px solid #CCCCCC; content: " "; height: 9px; left: -5px; position: absolute; top: 30px;
                       width: 9px; }
+buttonTimeLine      { text-align: center; }
+#titleBar           { margin-top: 20px; margin-left: 220px; line-height: 0; margin-bottom: 30px; }
+#message_btn        { float: right; position: relative; bottom: 30px; right: 25px; }
+#like_btn           { float: right; position: relative; bottom: 30px; right: 35px; }
+.aboutContent       { background: #F1F3F8; padding: 0 0 3px 25px; margin-left: -15px; border-radius: 0 3px 3px 0;
+                      border-bottom: 1px solid #E7EBF2; border-right: 1px solid #E7EBF2; border-top: 1px solid #E7EBF2; }
+.aboutContent p     { color: #333333; line-height: 16px;}
+.about h6           { margin-left: 30px;}
+.photos,
+.likes,
+.home,
+.videos             { border: 1px solid ; border-radius: 3px; border-color: rgba(0, 0, 0, 0.15); overflow: hidden;}
