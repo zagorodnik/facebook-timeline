@@ -34,14 +34,16 @@
 
 .leftPostNorm,
 .leftPost               { background: none repeat scroll 0% 0% white; margin-right: 12px; border: 1px solid #C4CDE0;
-                          border-radius: 3px 3px 3px 3px; padding: 9px; position: relative; margin-bottom: 15px;}
+                          border-radius: 3px 3px 3px 3px; padding: 9px; position: relative; margin-bottom: 15px; }
 .leftPost:after         { content: " "; position: absolute; top:30px; left: 401px; height: 9px; width: 9px; background: white;
                           border-right: 1px solid #ccc; border-top: 1px solid #C4CDE0; -moz-transform: rotate(45deg);
                           -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); }
 
 .leftPost:before        { background:none repeat scroll 0 0 #C3CCE0; border:2px solid #E7EBF2; border-radius:20px;
                           content:" "; height:5px; left:416px; position:absolute; top:31px; width:5px;}
-
+.leftPostNorm h1        { color: #6278AE; font-size:40px; font-weight: normal; padding: 5px 0 15px 5px; }
+.leftPost input         { margin: 10px 0 -2px -3px; width: 381px; padding: 5px; font-size: 13px; border-radius: 0;
+                          border-color: #C0C0C0; color: #696969; box-shadow: none;}
 
 buttonTimeLine          { text-align: center; }
 #titleBar               { margin-top: 20px; margin-left: 220px; line-height: 0; margin-bottom: 30px; }
@@ -50,24 +52,30 @@ buttonTimeLine          { text-align: center; }
 .aboutContent           { background: #F1F3F8; padding: 0 0 3px 25px; margin-left: -15px; border-radius: 0 3px 3px 0;
                           border-bottom: 1px solid #E7EBF2; border-right: 1px solid #E7EBF2; border-top: 1px solid #E7EBF2; }
 .aboutContent p         { color: #333333; line-height: 16px;}
+.aboutContent:hover     { border-right: 1px solid #A9A9A9; border-top: 1px solid #A9A9A9; border-bottom: 1px solid #A9A9A9; }
 .about h6               { margin-left: 30px;}
 .photos,
 .likes,
 .home,
 .videos                 { border: 1px solid ; border-radius: 3px; border-color: rgba(0, 0, 0, 0.15); overflow: hidden;}
 
+.photos:hover,
+.likes:hover,
+.home:hover,
+.videos:hover           { border: 1px solid #A9A9A9; }
+
 .rightPost,
-.rightPostNorm          { background: none repeat scroll 0% 0% white; border: 1px solid #C4CDE0;
+.rightPostNorm          { background: none repeat scroll 0% 0% white; border: 1px solid #C4CDE0; margin-bottom: 15px;
                           border-radius: 3px 3px 3px 3px; padding: 9px; position: relative; }
 .rightPost:after        { -moz-transform: rotate(45deg); background: none repeat scroll 0 0 white; border-bottom: 1px solid #C4CDE0;
                           border-left: 1px solid #C4CDE0; content: " "; height: 9px; left: -5px; position: absolute; top: 30px;
                           width: 9px; }
 .rightPost a,
-.rightPostNorm a        { font-weight: bold; color: #3B5998; position: absolute; top: 17px; left: 30px;}
+.rightPostNorm header a { font-weight: bold; color: #3B5998; position: absolute; top: 17px; left: 30px;}
 .rightPost a:hover,
 .rightPostNorm a:hover  { text-decoration: underline; }
 .rightPost  p,
-.rightPostNorm p        { color: #696969; position: absolute; top: 30px; left: 30px;}
+.rightPostNorm header p { color: #696969; position: absolute; top: 30px; left: 30px;}
 .rightPost header,
 .rightPostNorm header   { border-bottom: 1px solid #DCDCDC;}
 .rightPost section,
@@ -76,11 +84,9 @@ buttonTimeLine          { text-align: center; }
 .post,
 .photoVideo             { padding: 8px; display: inline; font-weight: bold;}
 .photoVideo             { border-left: 1px solid #DCDCDC; }
-.photoVideo a           { text-decoration: none; color: #3B5998;}
+.photoVideo a           { text-decoration: none; }
 .photoVideo:hover       { background-color: #ebeef4;}
 
-.leftPost input         { margin: 10px 0 -2px -3px; width: 381px; padding: 5px; font-size: 13px; border-radius: 0;
-                          border-color: #C0C0C0; color: #696969; box-shadow: none;}
 
 .activity               { background-image: url("https://s-static.ak.fbcdn.net/rsrc.php/v2/y9/x/1KApsCT_d0U.png"); background-position: 0 0;
                           width: 32px; height: 32px; display: inline-block; }
@@ -89,16 +95,42 @@ buttonTimeLine          { text-align: center; }
 .leftPostNorm header    { background-color: #F1F1F1; margin: -6px; border-bottom: 1px solid #C0C0C0;
                           padding: 5px 0 0 12px;}
 .topSection             { background-color: #F1F1F1; margin: 7px -6px 0; font-weight: bold; padding: 2px 12px;}
-.leftPostNorm h1        { color: #6278AE; font-size:40px; font-weight: normal; padding: 5px 0 15px 5px; }
-.drinksHeader p         { float: left; color: #696969;}
-.drinksHeader a         { float: right; color: #3B5998; }
+.recentPostHeader p,
+.drinksHeader p         { float: left; color: #696969; padding-left: 5px; padding-bottom: 5px; padding-top: 5px;}
+.recentPostHeader a,
+.drinksHeader a         { float: right; padding-right: 5px; padding-top: 5px;}
 .drinksHeader a:hover   { text-decoration: underline; }
 .drinksHeader           { margin-bottom: 20px; }
+
 .drinkItems img         { width: 32px; height: 32px;}
-.drinkItems p           { color: #696969;}
+.drinkItems p           { color: #696969; position: relative; left: 40px; bottom: 15px;}
 .drinkItems a           { font-weight: bold; color: #3B5998;}
 .drinkItems a:hover     { text-decoration: underline; }
+.drinkItems li          { margin-left: -20px; margin-top: 10px; line-height: 10px;}
 .likeIcon               { background-image: url("https://s-static.ak.fbcdn.net/rsrc.php/v2/y9/x/pxf5JTqufJg.png");
                           background-position: 0 -52px; display: inline-block; height: 13px; width: 15px;}
+.likeIconSmall          { background-image: url("https://s-static.ak.fbcdn.net/rsrc.php/v2/ye/x/xTz7_JCUbSr.png");
+                          background-position: 0 -30px; display: inline-block; height: 11px; width: 12px;}
+.recentPostIcon         { background-image: url("https://s-static.ak.fbcdn.net/rsrc.php/v2/ye/x/xTz7_JCUbSr.png");
+                          background-position: 0 -42px; display: inline-block; width: 11px; height: 11px; }
+.moreIconSmall          { background-image: url("https://s-static.ak.fbcdn.net/rsrc.php/v2/y3/x/Uy0S-JwLSOj.png");
+                          background-position: -183px -605px; height: 3px; width: 5px; display: inline-block; }
+
 .lfloat                 { float: left; clear: both; }
-.rfloat                 { float: right; }
+.rfloat                 { float: right; margin-top: 10px; }
+.lfloat span            { position: relative; bottom: 7px; left: 5px;}
+.rfloat a               { font-weight: normal; padding-right: 5px;}
+.border                 { clear: both; border-bottom: 1px solid #E9E9E9;}
+.drinksEnd              { clear:both; margin-bottom: -15px;}
+
+.recentPost             { border-bottom: 1px solid #E9E9E9; margin-top: 7px; margin-left: 10px; line-height: 6px;}
+.recentPost img         { width: 32px; height: 32px; }
+.recentPost .userName   { bottom: 9px; left: 5px; position: relative;  font-weight: bold; }
+.recentPost p           { bottom: 12px; left: 40px; position: relative;}
+.recentPostFooter       { position: relative; bottom: 5px; left: 40px;}
+.recentPostFooter a     { text-decoration: none; font-size: 9px; }
+.recentPostFooter h7    { color: #696969;}
+
+.rightPostNorm footer a { margin-left: 7px;}
+.rightPostNorm footer   { margin: 5px 0 10px 6px;}
+.rightPostNorm footer i { padding-bottom: 3px;}
